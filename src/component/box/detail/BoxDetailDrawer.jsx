@@ -45,7 +45,7 @@ const BoxDetailDrawer = (props) => {
             okText: 'Ok',
             content:
               <div style={{ textAlign: 'center' }}>
-                Box name can not be empty. 
+                {err.message}
               </div>,
           });
         }

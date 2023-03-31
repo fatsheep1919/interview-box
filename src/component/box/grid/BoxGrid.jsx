@@ -31,7 +31,9 @@ const BoxGrid = () => {
 
   const handleUpdateBox = useCallback((newBox) => {
     if (!newBox.boxInfo.name) {
-      throw new Error('box name is empty')
+      throw new Error('Box name can not be empty');
+    } else if (newBox.boxInfo.name.length > 24) {
+      throw new Error('Box name is limited to max length of 24');
     }
 
     const targetBox = boxData[curBoxIndex];

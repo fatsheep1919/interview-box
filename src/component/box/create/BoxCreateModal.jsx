@@ -66,7 +66,10 @@ const BoxCreateModal = (props) => {
           <FormItem
             label='Box Name'
             field="name"
-            rules={[{ required: true, message: 'Box name is required' }]}
+            rules={[
+              { required: true, message: 'Box name is required' },
+              { maxLength: 24, validateLevel: 'error', message: 'Box name is limited to max length of 24' }
+            ]}
           >
             <Input
               placeholder='please enter box name'
