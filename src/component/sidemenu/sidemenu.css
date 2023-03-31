@@ -4,14 +4,14 @@
 .sidemenu .menu-item {
   display: flex;
   align-items: center;
-  padding: 38px 40px;
+  padding: 38px 5px 38px 40px;
   color: #00000033;
   cursor: pointer;
 }
 .sidemenu .menu-item .icon {
-  width: 20px;
-  height: 20px;
+  width: 28px;
   color: #00000033;
+  fill: #00000033;
   margin: 0;
 }
 .sidemenu .menu-item .title {
@@ -21,6 +21,7 @@
 .sidemenu .menu-item.arco-menu-selected,
 .sidemenu .menu-item.arco-menu-selected .icon {
   color: black;
+  fill: black;
   background: none;
   cursor: auto;
 }

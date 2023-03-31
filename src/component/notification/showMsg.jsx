@@ -2,7 +2,7 @@ import React from 'react';
 import { Modal } from '@arco-design/web-react';
 
 const ERROR_CODE = {
-
+  '401': 'Authorization Expired. Please login again.',
 }
 
 function showMsg(params, type = 'error') {

@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const imageDir = path.resolve('./asset/image');
+const iconDir = path.resolve('./asset/icon');
 
 module.exports = {
   entry: './src/index.js',
@@ -29,12 +30,27 @@ module.exports = {
         test: /\.jpg|png|gif$/,
         use: 'url-loader'
       },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: "babel-loader"
+          },
+          {
+            loader: "react-svg-loader",
+            options: {
+              jsx: true
+            }
+          }
+        ]
+      }
     ]
   },
   resolve: {
     extensions: ['.jsx', '.js'],
     alias: {
-      Image: imageDir
+      Image: imageDir,
+      Icon: iconDir,
     }
   },
   plugins: [
