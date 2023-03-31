@@ -1,0 +1,6 @@
+.search .arco-input-group-wrapper .arco-input-inner-wrapper,
+.search .arco-input-group-wrapper .arco-input-inner-wrapper:focus {
+  background: none;
+  outline: none;
+  border: none;
+}

@@ -1,0 +1,63 @@
+.box-create-modal .arco-modal-header {
+  border-bottom: none;
+  height: 68px;
+}
+.box-create-modal .arco-modal-header .arco-modal-title {
+  text-align: left;
+}
+.box-create-modal .arco-modal-content {
+  padding: 10px 24px 29px 24px;
+}
+.box-create-modal .arco-modal-content .arco-spin {
+  width: 100%;
+}
+.box-create-modal .arco-modal-content .arco-form-item .arco-input {
+  height: 42px;
+  font-size: 14px;
+  border-radius: 8px;
+}
+.box-create-modal .arco-modal-content .arco-form-item .arco-textarea {
+  min-height: 120px;
+  border-radius: 8px;
+  font-size: 14px;
+  resize: none;
+}
+.box-create-modal .arco-modal-content .arco-form-item .arco-select-view {
+  border-radius: 6px;
+}
+.box-create-modal .arco-modal-content .arco-form-item .arco-form-message {
+  margin-bottom: 10px;
+}
+.box-create-modal .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.box-create-modal .buttons .arco-btn {
+  width: 120px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 12px;
+}
+.box-create-modal .buttons .arco-btn.arco-btn-primary {
+  background-color: #5570F1;
+  color: #fff;
+}
+.box-create-modal .buttons .arco-btn.arco-btn-outline {
+  background-color: #fff;
+  border-color: #5570F1;
+  color: #5570F1;
+}
+.box-create-modal .arco-modal-close-icon {
+  padding: 6px;
+  border-radius: 8px;
+  background-color: #FFF2E2;
+}
+.box-create-modal .arco-icon-hover::before {
+  background: none;
+}

@@ -1,0 +1,107 @@
+.box-grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 58px 10px 58px 71px;
+  gap: 30px;
+}
+.box-grid .box-grid-item-wrap {
+  width: 342px;
+  height: 383px;
+  border-radius: 10px;
+  background: #fff;
+}
+.box-grid .box-grid-item-wrap .arco-spin {
+  width: 100%;
+}
+.box-grid .box-create,
+.box-grid .box-item {
+  display: flex;
+  flex-direction: column;
+  padding: 22px;
+  padding-bottom: 15px;
+  position: relative;
+}
+.box-grid .box-item .remove {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #C4C4C4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.box-grid .box-item .remove .arco-icon {
+  width: 16px;
+  height: 16px;
+  color: #fafafa;
+}
+.box-grid .box-item .tags {
+  display: flex;
+  gap: 7px;
+  min-height: 22px;
+}
+.box-grid .box-create .banner,
+.box-grid .box-item .banner {
+  display: flex;
+  justify-content: space-between;
+}
+.box-grid .box-create .banner {
+  margin-top: 22px;
+}
+.box-grid .box-create .banner .title,
+.box-grid .box-create .banner .price,
+.box-grid .box-item .banner .title,
+.box-grid .box-item .banner .price {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 29px;
+  margin-top: 8px;
+}
+.box-grid .box-create .banner .price,
+.box-grid .box-item .banner .price {
+  color: #FF3A29;
+}
+.box-grid .box-create .description,
+.box-grid .box-item .description {
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+  opacity: 0.4;
+  line-height: 20px;
+  height: 40px;
+  max-height: 40px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+.box-grid .box-create .image,
+.box-grid .box-item .image {
+  text-align: center;
+  margin-top: 20px;
+}
+.box-grid .box-create .image img,
+.box-grid .box-item .image img {
+  width: 168px;
+  height: 160px;
+}
+.box-grid .box-create .button,
+.box-grid .box-item .button {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+.box-grid .box-create .button button,
+.box-grid .box-item .button button {
+  width: 119px;
+  height: 41px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(65.58deg, rgba(0, 66, 255, 0.5) -11.84%, rgba(235, 0, 27, 0.5) 98.75%);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

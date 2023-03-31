@@ -1,0 +1,26 @@
+.sidemenu {
+  width: 100%;
+}
+.sidemenu .menu-item {
+  display: flex;
+  align-items: center;
+  padding: 38px 40px;
+  color: #00000033;
+  cursor: pointer;
+}
+.sidemenu .menu-item .icon {
+  width: 20px;
+  height: 20px;
+  color: #00000033;
+  margin: 0;
+}
+.sidemenu .menu-item .title {
+  margin-left: 25px;
+  font-size: 18px;
+}
+.sidemenu .menu-item.arco-menu-selected,
+.sidemenu .menu-item.arco-menu-selected .icon {
+  color: black;
+  background: none;
+  cursor: auto;
+}

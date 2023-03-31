@@ -1,0 +1,190 @@
+.box-detail-drawer {
+  min-width: 900px;
+  background: #F8F8F8;
+}
+.box-detail-drawer .arco-drawer-header {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
+  padding: 32px 74px;
+}
+.box-detail-drawer .arco-drawer-content {
+  padding: 3px 46px 10px 63px;
+}
+.box-detail-drawer .arco-drawer-content .arco-spin {
+  width: 100%;
+}
+.box-detail-drawer .main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.box-detail-drawer .main .hiddenInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.box-detail-drawer .main .sections {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+.box-detail-drawer .main .sections .box-info {
+  width: 663px;
+  height: 221px;
+  background-color: #fff;
+  border-radius: 12px;
+  border: 1px solid #E1E2E9;
+  padding: 31px 29px;
+  box-sizing: border-box;
+  display: flex;
+}
+.box-detail-drawer .main .sections .box-info .image {
+  float: left;
+  width: 168px;
+  height: 160px;
+  margin: 0 49px 30px 0;
+}
+.box-detail-drawer .main .sections .box-info .image img {
+  width: 100%;
+  height: 100%;
+}
+.box-detail-drawer .main .sections .box-info .title,
+.box-detail-drawer .main .sections .box-info .description {
+  border: 1px solid transparent;
+}
+.box-detail-drawer .main .sections .box-info .title:hover,
+.box-detail-drawer .main .sections .box-info .description:hover {
+  border: 1px solid #E1E2E9;
+}
+.box-detail-drawer .main .sections .box-info .title .arco-input {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 4px 0;
+  font-size: 22px;
+  font-weight: 500;
+}
+.box-detail-drawer .main .sections .box-info .description .arco-textarea {
+  min-height: 100px;
+  background: none;
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 4px 0;
+  font-size: 12px;
+  font-weight: 400;
+}
+.box-detail-drawer .main .sections .product-info {
+  width: 395px;
+  height: 221px;
+  background-color: #fff;
+  border-radius: 12px;
+  border: 1px solid #E1E2E9;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box-detail-drawer .main .sections .product-info .head {
+  display: flex;
+  justify-content: space-between;
+}
+.box-detail-drawer .main .sections .product-info .head .date {
+  color: #2C2D33;
+  font-size: 12px;
+  font-weight: 400;
+}
+.box-detail-drawer .main .sections .product-info .bottom {
+  display: flex;
+}
+.box-detail-drawer .main .sections .product-info .bottom .group {
+  flex: 1;
+}
+.box-detail-drawer .main .sections .product-info .bottom .group .field {
+  font-size: 12px;
+  font-weight: 400;
+  color: #8B8D97;
+}
+.box-detail-drawer .main .buttons {
+  margin: 31px 0;
+  display: flex;
+  gap: 12px;
+}
+.box-detail-drawer .main .buttons .button {
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 16px;
+  border-radius: 16px;
+  background: #BACCFD;
+}
+.box-detail-drawer .main .buttons .button.cur {
+  color: #fff;
+}
+.box-detail-drawer .main .table {
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+}
+.box-detail-drawer .main .table .errMsg {
+  padding: 24px 12px;
+}
+.box-detail-drawer .main .table .head {
+  padding: 24px 21px 10px 21px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box-detail-drawer .main .table .head .title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.box-detail-drawer .main .table .head .actions {
+  display: flex;
+  gap: 5px;
+}
+.box-detail-drawer .main .table .head .actions .arco-input-group-wrapper .arco-input-inner-wrapper {
+  border: solid 1px gray;
+  background: none;
+}
+.box-detail-drawer .main .table .head .actions .arco-btn-outline {
+  border-color: gray;
+  color: gray;
+}
+.box-detail-drawer .main .table .head .actions .arco-btn-group {
+  border: solid 1px gray;
+  border-radius: 3px;
+}
+.box-detail-drawer .main .table .head .actions .arco-btn-group .arco-btn-secondary {
+  background: none;
+}
+.box-detail-drawer .main .table .head .actions .arco-btn-group .arco-btn-size-default {
+  height: 30px;
+  border: none;
+}
+.box-detail-drawer .main .table .arco-spin {
+  width: 100%;
+}
+.box-detail-drawer .main .table .content .arco-table table {
+  border-top: 1px solid #e5e6eb;
+}
+.box-detail-drawer .main .table .content .arco-table table .arco-checkbox-mask {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+}
+.box-detail-drawer .main .table .content .arco-table table tbody .arco-table-td {
+  color: #6E7079;
+}
+.box-detail-drawer .main .table .content .arco-table table tbody .arco-table-tr:last-child .arco-table-td {
+  border-bottom: none;
+}
+.box-detail-drawer .main .table .content .arco-table thead .arco-table-tr .arco-table-th {
+  background: none;
+}
