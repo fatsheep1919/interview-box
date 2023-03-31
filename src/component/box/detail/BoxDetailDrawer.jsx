@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Drawer, Spin, Modal } from '@arco-design/web-react';
+import { Drawer, Spin } from '@arco-design/web-react';
 
 import { DEFINITION, subscribe, unsubscribe } from '../../../event';
+import { showMsg } from '../../notification/showMsg';
 import BoxInfo from './BoxInfo';
 import ProductInfo from './ProductInfo';
 import CommodityTable from './CommodityTable';
@@ -40,14 +41,7 @@ const BoxDetailDrawer = (props) => {
           onClose();
           setLocalData(undefined);
         } catch (err){
-          Modal.error({
-            title: 'Error Notification',
-            okText: 'Ok',
-            content:
-              <div style={{ textAlign: 'center' }}>
-                {err.message}
-              </div>,
-          });
+          showMsg({ msg: err.message });
         }
       }, 500, () => {
         setLoading(false);

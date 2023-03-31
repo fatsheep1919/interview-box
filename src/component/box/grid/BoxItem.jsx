@@ -1,8 +1,9 @@
 import React, { useState, useCallback } from 'react';
-import { Spin, Modal } from '@arco-design/web-react';
+import { Spin } from '@arco-design/web-react';
 import { IconClose } from '@arco-design/web-react/icon';
 
 import Tag from '../../tag';
+import { showMsg } from '../../notification/showMsg';
 import boxImg from 'Image/box.png';
 
 import { waitToCall } from '../../../../test/util';
@@ -19,14 +20,13 @@ const BoxItem = (props) => {
       try {
         onRemove(data.id);
       } catch (err) {
-        Modal.error({
-          title: 'Error Notification',
-          okText: 'Ok',
-          content:
-            <div style={{ textAlign: 'center' }}>
+        showMsg({
+          msg: (
+            <>
               Failed to remove box: <span style={{ color: 'red' }}>{data.name}</span>. 
               Please try again later.
-            </div>,
+            </>
+          )
         });
       } finally{
         setSubmitting(false);

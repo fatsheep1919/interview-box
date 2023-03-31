@@ -1,6 +1,8 @@
 import React, { useCallback, useState, useEffect } from 'react';
-import { Input, Button, Table, Dropdown, Menu, Modal, Spin } from '@arco-design/web-react';
+import { Input, Button, Table, Dropdown, Menu, Spin } from '@arco-design/web-react';
 import { IconSearch, IconDown, IconFilter, IconCalendar, IconSend, IconSort } from '@arco-design/web-react/icon';
+
+import { showMsg } from '../../notification/showMsg';
 
 import { waitToCall } from '../../../../test/util';
 import { testBoxData } from '../../../../test/data';
@@ -54,15 +56,10 @@ const CommodityTable = (props) => {
   }, []);
 
   const handleBatchRemove = useCallback(() => {
-    Modal.error({
-      title: 'Error Notification',
+    showMsg({
       okText: 'Refresh Commodities',
       onOk: handleLoad,
-      content:
-        <div>
-          Failed to remove commodities. 
-          Please click the button below to refresh commodities and try again.
-        </div>,
+      msg: 'Failed to remove commodities. Please click the button below to refresh commodities and try again.',
     });
   }, [handleLoad]);
 
